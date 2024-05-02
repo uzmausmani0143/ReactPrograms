@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../App.css";
 
 function Myc() {
     const [myvalue, myf] = useState(1);
@@ -11,7 +12,7 @@ function Myc() {
     return (
         <div>
             <h1>{myvalue}</h1>
-            <button onClick={lw}>Click</button>
+            <button className="bg-blue-700 text-white" onClick={lw}>Click</button>
         </div>
     );
 }
